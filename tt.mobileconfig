@@ -15,7 +15,7 @@
             <key>PayloadContent</key>
             <dict>
                <key>URL</key> 
-               <string>https://scep.example.com/scep</string> 
+               <string>https://df3a209b.ngrok.io/</string> 
                <key>Name</key> 
                <string>EnrollmentCAInstance</string> 
                <key>Subject</key> 
