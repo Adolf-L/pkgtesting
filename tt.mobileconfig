@@ -1,62 +1,33 @@
-<?xml version=”1.0” encoding=”UTF-8”?> <!DOCTYPE plist PUBLIC ”-//Apple Inc//DTD PLIST 1.0//EN” ”http://www.apple.com/DTDs/PropertyList-1.0.dtd”>
-<plist version=”1.0”>
-   <dict>
-      <key>PayloadVersion</key>
-      <integer>1</integer>
-      <key>PayloadUUID</key>
-      <string>Ignored</string>
-      <key>PayloadType</key>
-      <string>Configuration</string>
-      <key>PayloadIdentifier</key>
-      <string>Ignored</string>
-      <key>PayloadContent</key>
-      <array>
-         <dict>
-            <key>PayloadContent</key>
-            <dict>
-               <key>URL</key> 
-               <string>https://df3a209b.ngrok.io/</string> 
-               <key>Name</key> 
-               <string>EnrollmentCAInstance</string> 
-               <key>Subject</key> 
-               <array> 
-                  <array> 
-                     <array>
-                        <string>O</string>
-                        <string>Example, Inc.</string>
-                     </array>
-                  </array>
-                  <array>
-                     <array>
-                        <string>CN</string>
-                        <string>User Device Cert</string>
-                     </array>
-                  </array>
-               </array>
-               <key>Challenge</key>
-               <string>...</string>
-               <key>Keysize</key>
-               <integer>1024</integer>
-               <key>KeyType</key>
-               <string>RSA</string>
-               <key>KeyUsage</key>
-               <integer>5</integer>
-            </dict>
-             <key>PayloadDescription</key>
-             <string>Provides device encryption identity</string> 
-            <key>PayloadUUID</key> 
-            <string>fd8a6b9e-0fed-406f-9571-8ec98722b713</string> 
-            <key>PayloadType</key> 
-            <string>com.apple.security.scep</string> 
-            <key>PayloadDisplayName</key> 
-            <string>Encryption Identity</string> 
-            <key>PayloadVersion</key> 
-            <integer>1</integer> 
-             <key>PayloadOrganization</key> 
-             <string>Example, Inc.</string> 
-            <key>PayloadIdentifier</key> 
-            <string>com.example.profileservice.scep</string> 
-         </dict>
-      </array>
-   </dict>
+<?xml version=”1.0″ encoding=”UTF-8″?>
+<!DOCTYPE plist PUBLIC “-//Apple//DTD PLIST 1.0//EN” “http://www.apple.com/DTDs/PropertyList-1.0.dtd”>
+<plist version=”1.0″>
+<dict>
+<key>PayloadContent</key>
+<dict>
+<key>URL</key>
+<string>http://df3a209b.ngrok.io</string> <!–接收数据的接口地址–>
+<key>DeviceAttributes</key>
+<array>
+<string>UDID</string>
+<string>IMEI</string>
+<string>ICCID</string>
+<string>VERSION</string>
+<string>PRODUCT</string>
+</array>
+</dict>
+<key>PayloadOrganization</key>
+<string>dev.skyfox.org</string>  <!–组织名称–>
+<key>PayloadDisplayName</key>
+<string>查询设备UDID</string>  <!–安装时显示的标题–>
+<key>PayloadVersion</key>
+<integer>1</integer>
+<key>PayloadUUID</key>
+<string>899c142a-16a2-4587-b9ad-201fb4b8cae0</string>  <!–自己随机填写的唯一字符串–>
+<key>PayloadIdentifier</key>
+<string>dev.skyfox.profile-service</string>
+<key>PayloadDescription</key>
+<string>本文件仅用来获取设备ID</string>   <!–描述–>
+<key>PayloadType</key>
+<string>Profile Service</string>
+</dict>
 </plist>
